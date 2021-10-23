@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[SSMP$INSURANCE] (
+    [id]     INT          IDENTITY (1, 1) NOT NULL,
+    [idm_1c] VARCHAR (50) NULL,
+    [text]   VARCHAR (50) NULL,
+    CONSTRAINT [PK_SSMP$INSURANCE] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

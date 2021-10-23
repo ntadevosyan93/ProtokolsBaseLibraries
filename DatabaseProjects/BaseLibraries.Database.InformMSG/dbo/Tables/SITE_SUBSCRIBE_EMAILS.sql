@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[SITE_SUBSCRIBE_EMAILS] (
+    [id]      INT           IDENTITY (1, 1) NOT NULL,
+    [date_in] DATETIME      CONSTRAINT [DF_SITE_SUBSCRIBE_EMAILS_date_in] DEFAULT (getdate()) NULL,
+    [ip]      VARCHAR (50)  NULL,
+    [fio]     VARCHAR (250) NULL,
+    [email]   VARCHAR (MAX) NULL,
+    [del]     INT           CONSTRAINT [DF_SITE_SUBSCRIBE_EMAILS_del] DEFAULT ((0)) NULL,
+    CONSTRAINT [PK_SITE_SUBSCRIBE_EMAILS] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

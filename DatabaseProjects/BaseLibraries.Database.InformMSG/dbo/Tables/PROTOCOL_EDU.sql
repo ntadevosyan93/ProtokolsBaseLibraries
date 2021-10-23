@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[PROTOCOL_EDU] (
+    [id]         INT           IDENTITY (1, 1) NOT NULL,
+    [field_name] VARCHAR (150) NULL,
+    CONSTRAINT [PK_PROTOCOL_EDU] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

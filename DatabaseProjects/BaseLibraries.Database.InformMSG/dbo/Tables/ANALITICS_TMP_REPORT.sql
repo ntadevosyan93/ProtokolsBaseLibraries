@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[ANALITICS$TMP_REPORT] (
+    [id]   INT             IDENTITY (1, 1) NOT NULL,
+    [guid] VARCHAR (50)    NOT NULL,
+    [text] VARCHAR (250)   NULL,
+    [cc1]  NUMERIC (18, 2) NULL,
+    [cc2]  NUMERIC (18, 2) NULL,
+    CONSTRAINT [PK_ANALITICS$TMP_REPORT] PRIMARY KEY CLUSTERED ([id] ASC, [guid] ASC)
+);
+

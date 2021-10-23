@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72E8BBE0-88BE-4B67-964C-8047D3DF3B39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaseLibraries.Models</RootNamespace>
+    <AssemblyName>BaseLibraries.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="iClinic\EmergencyNotification.cs" />
+    <Compile Include="iClinic\EmployeeAcceptNorm.cs" />
+    <Compile Include="iClinic\EmplServiceTime.cs" />
+    <Compile Include="iClinic\Views\EcoTaskServices.cs" />
+    <Compile Include="informMsg\KAD%24PSY_TEST_Protocol_CAND.cs" />
+    <Compile Include="informMsg\KAD%24PSY_TEST_Protocol_CAND_History.cs" />
+    <Compile Include="informMsg\View%24psy_Download.cs" />
+    <Compile Include="informMsg\View%24Psy_load.cs" />
+    <Compile Include="MaternityHospital\Employee.cs" />
+    <Compile Include="MaternityHospital\Json\Prenatal.cs" />
+    <Compile Include="MaternityHospital\Services.cs" />
+    <Compile Include="MaternityHospital\Task.cs" />
+    <Compile Include="MaternityHospital\TaskPage.cs" />
+    <Compile Include="MaternityHospital\Patient.cs" />
+    <Compile Include="iClinic\ApplicationReport.cs" />
+    <Compile Include="iClinic\DisabilitySheetPeriod.cs" />
+    <Compile Include="iClinic\APPLICATION_TESTEMPL.cs" />
+    <Compile Include="iClinic\EmployeeContentPharm.cs" />
+    <Compile Include="iClinic\EmployeeProtocolRights.cs" />
+    <Compile Include="iClinic\EmployeeTemplatePharm.cs" />
+    <Compile Include="iClinic\F025\PatientMetric.cs" />
+    <Compile Include="iClinic\F025\TherapyPharm.cs" />
+    <Compile Include="iClinic\F025\TherapyRecommendation.cs" />
+    <Compile Include="iClinic\GystoData.cs" />
+    <Compile Include="iClinic\GystoServiceTemplate.cs" />
+    <Compile Include="iClinic\GystoTemplate.cs" />
+    <Compile Include="iClinic\Header.cs" />
+    <Compile Include="iClinic\HospitalReferall.cs" />
+    <Compile Include="iClinic\ICLINIC_SCHEDULE_DOCTORS.cs" />
+    <Compile Include="iClinic\Klass.cs" />
+    <Compile Include="iClinic\Mkb10_4.cs" />
+    <Compile Include="iClinic\PatientOrderDisability.cs" />
+    <Compile Include="iClinic\PlacesDepartment.cs" />
+    <Compile Include="iClinic\PlacesEmail.cs" />
+    <Compile Include="iClinic\Employee.cs" />
+    <Compile Include="iClinic\Protocols2Map.cs" />
+    <Compile Include="iClinic\Protocols2Fields.cs" />
+    <Compile Include="iClinic\InsuranceOrg.cs" />
+    <Compile Include="iClinic\InsurancePolicy.cs" />
+    <Compile Include="iClinic\Protocols2Mkb10.cs" />
+    <Compile Include="iClinic\Patient.cs" />
+    <Compile Include="iClinic\PatientInfo.cs" />
+    <Compile Include="iClinic\PatientInsurance.cs" />
+    <Compile Include="iClinic\Reports\Address.cs" />
+    <Compile Include="iClinic\Reports\Employee.cs" />
+    <Compile Include="iClinic\Reports\MedCardData.cs" />
+    <Compile Include="iClinic\Reports\Patient.cs" />
+    <Compile Include="iClinic\Reports\Person.cs" />
+    <Compile Include="iClinic\Reports\Department.cs" />
+    <Compile Include="iClinic\Reports\TaskVisitData.cs" />
+    <Compile Include="iClinic\Reports\Diagnosis.cs" />
+    <Compile Include="iClinic\RLS1C.cs" />
+    <Compile Include="iClinic\StatMetricParam.cs" />
+    <Compile Include="iClinic\TaskDocument.cs" />
+    <Compile Include="iClinic\PatientDiagnoses.cs" />
+    <Compile Include="iClinic\TaskDocumentMetadata.cs" />
+    <Compile Include="iClinic\TasksPharm.cs" />
+    <Compile Include="iClinic\Places.cs" />
+    <Compile Include="iClinic\ServicesPrice.cs" />
+    <Compile Include="iClinic\Protocols2.cs" />
+    <Compile Include="iClinic\Services.cs" />
+    <Compile Include="iClinic\Spec.cs" />
+    <Compile Include="iClinic\Tasks.cs" />
+    <Compile Include="iClinic\EmployeeTemplate.cs" />
+    <Compile Include="iClinic\EmployeeTemplateContent.cs" />
+    <Compile Include="iClinic\Views\EmployeeTemplatePharmView.cs" />
+    <Compile Include="iClinic\Views\GystoServiceTemplateView.cs" />
+    <Compile Include="iClinic\Views\HistologicalAnalysis.cs" />
+    <Compile Include="iClinic\Views\OrderDisabilitySheetView.cs" />
+    <Compile Include="iClinic\Views\PatientDiagnosesView.cs" />
+    <Compile Include="iClinic\Views\PatientVisitsView.cs" />
+    <Compile Include="iClinic\Views\ProtocolDocument.cs" />
+    <Compile Include="iClinic\Views\ProtocolView.cs" />
+    <Compile Include="iClinic\Views\TemplateView.cs" />
+    <Compile Include="iClinic\Views\UserView.cs" />
+    <Compile Include="informMsg\BILL\RM%24BUDGET%24GROUPINGS.cs" />
+    <Compile Include="informMsg\BILL\RMACCESSORIES.cs" />
+    <Compile Include="informMsg\BILL\RMOS.cs" />
+    <Compile Include="informMsg\BILL\RMOSTYPE.cs" />
+    <Compile Include="informMsg\BILL\RM_OS_BILLING.cs" />
+    <Compile Include="informMsg\BILL\RM_OS_BILLING_INVOICE.cs" />
+    <Compile Include="informMsg\BILL\RM_OS_TONER_ADDITION.cs" />
+    <Compile Include="informMsg\BILL\View\View%24billing%24dataSend.cs" />
+    <Compile Include="informMsg\BILL\View\View%24edit_Billing.cs" />
+    <Compile Include="informMsg\BILL\View\View%24RM%24OS%24BILLING2.cs" />
+    <Compile Include="informMsg\BILL\View\View%24Sogl.cs" />
+    <Compile Include="informMsg\BILL\View\view_rmos_grid.cs" />
+    <Compile Include="informMsg\DEPARTMENTS.cs" />
+    <Compile Include="informMsg\DEPARTMENTS_OFFICES.cs" />
+    <Compile Include="informMsg\Dispatch\DISPATCH%24INCOMING.cs" />
+    <Compile Include="informMsg\Dispatch\DISPATCH%24OUTCOMING.cs" />
+    <Compile Include="informMsg\Dispatch\IncomingGridView.cs" />
+    <Compile Include="informMsg\Dispatch\OutcommingGridView.cs" />
+    <Compile Include="informMsg\Dog\DOGOVORS%24REG.cs" />
+    <Compile Include="informMsg\Dog\view%24dogovor.cs" />
+    <Compile Include="informMsg\Employee\View%24ExportEmployee1C.cs" />
+    <Compile Include="informMsg\Employee\View%24KAD%24EMPL%24ACTUAL.cs" />
+    <Compile Include="informMsg\Employee_Education.cs" />
+    <Compile Include="informMsg\EMPL_MAILING_ALL.cs" />
+    <Compile Include="informMsg\Common\EMPL_MAILING_LIST.cs" />
+    <Compile Include="informMsg\EMPL_TO_OTDEL.cs" />
+    <Compile Include="informMsg\Incident\TT%24MAIN.cs" />
+    <Compile Include="informMsg\Incident\TT%24MAIN_COLLABORATORS.cs" />
+    <Compile Include="informMsg\Incident\TT%24Pretensions.cs" />
+    <Compile Include="informMsg\Incident\TT%24SPR_REGION.cs" />
+    <Compile Include="informMsg\Incident\TT%24SPR_REGION_EMPL.cs" />
+    <Compile Include="informMsg\Incident\View%24TT%24MAIN.cs" />
+    <Compile Include="informMsg\Incident\View%24TT%24MAIN_COLLABORATORS.cs" />
+    <Compile Include="informMsg\Common\InformFILE_STOR.cs" />
+    <Compile Include="informMsg\Incident\View%24TT%24Pretensions.cs" />
+    <Compile Include="informMsg\KAD%24DOLJN.cs" />
+    <Compile Include="informMsg\Employee\KADEMPLOYEE.cs" />
+    <Compile Include="informMsg\KADEmployeeVectorWork.cs" />
+    <Compile Include="informMsg\KAD_ENTLASSUNG_EMPLOYEE.cs" />
+    <Compile Include="informMsg\Common\KlassInform.cs" />
+    <Compile Include="informMsg\MSGMAIN.cs" />
+    <Compile Include="informMsg\PARTNER.cs" />
+    <Compile Include="MaternityHospital\Views\View_TaskPage.cs" />
+    <Compile Include="MaternityHospital\Views\View_TaskList.cs" />
+    <Compile Include="MedicalAnalyzer\Analysis.cs" />
+    <Compile Include="MedicalAnalyzer\AnalysisFlagView.cs" />
+    <Compile Include="MedicalAnalyzer\AnalysisExternalCode.cs" />
+    <Compile Include="MedicalAnalyzer\AnalysisExtraCode.cs" />
+    <Compile Include="MedicalAnalyzer\AnalysisGroup.cs" />
+    <Compile Include="MedicalAnalyzer\AnalysisReference.cs" />
+    <Compile Include="MedicalAnalyzer\Analyzer.cs" />
+    <Compile Include="MedicalAnalyzer\AnalyzerType.cs" />
+    <Compile Include="MedicalAnalyzer\Klass.cs" />
+    <Compile Include="MedicalAnalyzer\Log.cs" />
+    <Compile Include="MedicalAnalyzer\SpResult\AnalisesField.cs" />
+    <Compile Include="MedicalAnalyzer\TaskAnalysis.cs" />
+    <Compile Include="MedicalAnalyzer\TaskAnalysisSpecimen.cs" />
+    <Compile Include="informMsg\RM%24OS%24TONER.cs" />
+    <Compile Include="informMsg\UserLInk.cs" />
+    <Compile Include="informMsg\ViewENTLASSUNG.cs" />
+    <Compile Include="informMsg\WT\KADWORK_TIME.cs" />
+    <Compile Include="informMsg\WT\KADWORK_TIME_CURATORS_NOT_SEND.cs" />
+    <Compile Include="informMsg\WT\KadWork_Time_Date.cs" />
+    <Compile Include="informMsg\WT\KADWORK_TIME_HISTORY.cs" />
+    <Compile Include="informMsg\WT\KADWORK_TIME_TARDINESS.cs" />
+    <Compile Include="informMsg\WT\KAD_WORK_TIME_CURATORS.cs" />
+    <Compile Include="informMsg\WT\KAD_WORK_TIME_Curator_day.cs" />
+    <Compile Include="informMsg\View_Entlassung_NOT_ACTUAL.cs" />
+    <Compile Include="MedicalAnalyzer\Tasks.cs" />
+    <Compile Include="MedicalAnalyzer\TasksFlag.cs" />
+    <Compile Include="MedicalAnalyzer\Tube.cs" />
+    <Compile Include="MedicalAnalyzer\TubeAnalysis.cs" />
+    <Compile Include="MedicalAnalyzer\TubeAnalysisExternal.cs" />
+    <Compile Include="MedicalAnalyzer\TubeNotifications.cs" />
+    <Compile Include="MedicalAnalyzer\Views\GlukozeDiagram.cs" />
+    <Compile Include="PriceSRV\DiscountEmployee.cs" />
+    <Compile Include="PriceSRV\DiscountFilial.cs" />
+    <Compile Include="PriceSRV\DiscountList.cs" />
+    <Compile Include="PriceSRV\DiscountPatient.cs" />
+    <Compile Include="PriceSRV\DiscountRule.cs" />
+    <Compile Include="PriceSRV\DiscountServices.cs" />
+    <Compile Include="PriceSRV\Enums.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMC\MedicamentList.cs" />
+    <Compile Include="SMC\MkbList.cs" />
+    <Compile Include="SMC\PatientModel.cs" />
+    <Compile Include="SMC\PmMedical.cs" />
+    <Compile Include="SMC\PmNosology.cs" />
+    <Compile Include="SMC\PmService.cs" />
+    <Compile Include="SMC\ServicesList.cs" />
+    <Compile Include="SMC\StandartList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EnvironmentCollector\EnvironmentCollector\EnvironmentCollector.csproj">
+      <Project>{F6C4A6AD-FE4A-4062-A242-A7B5D82A06CE}</Project>
+      <Name>EnvironmentCollector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseLibraries\BaseLibraries.csproj">
+      <Project>{7f6b3025-54da-4f9d-88ee-8d8c7053db33}</Project>
+      <Name>BaseLibraries</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

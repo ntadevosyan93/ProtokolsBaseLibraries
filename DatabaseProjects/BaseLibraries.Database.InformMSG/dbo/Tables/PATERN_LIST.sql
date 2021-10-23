@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[PATERN$LIST] (
+    [id]   INT           IDENTITY (1, 1) NOT NULL,
+    [text] VARCHAR (250) NULL,
+    CONSTRAINT [PK_PATERN$LIST] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[DND_15_EMAILS] (
+    [id]    INT           IDENTITY (1, 1) NOT NULL,
+    [email] VARCHAR (150) NULL,
+    [text]  VARCHAR (50)  NULL,
+    CONSTRAINT [PK_DND_15_EMAILS] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

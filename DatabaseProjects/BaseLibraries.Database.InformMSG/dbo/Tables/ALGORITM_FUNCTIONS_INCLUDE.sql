@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[ALGORITM$FUNCTIONS_INCLUDE] (
+    [id]        INT IDENTITY (1, 1) NOT NULL,
+    [idm_funct] INT NULL,
+    [idm_alg]   INT NOT NULL,
+    [idm_step]  INT NULL,
+    CONSTRAINT [PK_ALGORITM$FUNCTIONS_INCLUDE] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

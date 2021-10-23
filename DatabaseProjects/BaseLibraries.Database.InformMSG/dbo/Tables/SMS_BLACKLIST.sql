@@ -1,0 +1,14 @@
+﻿CREATE TABLE [dbo].[SMS_BLACKLIST] (
+    [id]      INT           IDENTITY (1, 1) NOT NULL,
+    [date_in] DATETIME      CONSTRAINT [DF_SMS_BLACKLIST_date_in] DEFAULT (getdate()) NULL,
+    [user_in] VARCHAR (50)  NULL,
+    [phone]   VARCHAR (50)  NULL,
+    [comment] VARCHAR (MAX) NULL,
+    CONSTRAINT [PK_SMS_BLACKLIST] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_SMS_BLACKLIST]
+    ON [dbo].[SMS_BLACKLIST]([phone] ASC);
+

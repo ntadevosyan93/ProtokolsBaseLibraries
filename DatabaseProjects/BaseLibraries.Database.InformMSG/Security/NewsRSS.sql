@@ -1,0 +1,2 @@
+﻿CREATE USER [NewsRSS] FOR LOGIN [NewsRSS];
+

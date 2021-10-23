@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[PARTNER_TYPES] (
+    [id]   INT          IDENTITY (1, 1) NOT NULL,
+    [text] VARCHAR (50) NULL,
+    CONSTRAINT [PK_PARTNER_TYPES] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

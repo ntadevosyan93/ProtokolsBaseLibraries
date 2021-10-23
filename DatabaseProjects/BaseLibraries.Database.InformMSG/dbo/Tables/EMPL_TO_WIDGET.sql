@@ -1,0 +1,17 @@
+﻿CREATE TABLE [dbo].[EMPL_TO_WIDGET] (
+    [id]         INT IDENTITY (1, 1) NOT NULL,
+    [idm_empl]   INT NULL,
+    [idm_widget] INT NULL,
+    CONSTRAINT [PK_EMPL_TO_WIDGET] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_EMPL_TO_WIDGET_1]
+    ON [dbo].[EMPL_TO_WIDGET]([idm_empl] ASC, [idm_widget] ASC);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_EMPL_TO_WIDGET]
+    ON [dbo].[EMPL_TO_WIDGET]([idm_empl] ASC);
+

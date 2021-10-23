@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F6B3025-54DA-4F9D-88EE-8D8C7053DB33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BaseLibraries</RootNamespace>
+    <AssemblyName>BaseLibraries</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Abstractions\Models\IAddressData.cs" />
+    <Compile Include="Abstractions\Models\IRemovable.cs" />
+    <Compile Include="Abstractions\Models\MaternityHospital\ITaskEditor.cs" />
+    <Compile Include="Abstractions\Models\MaternityHospital\ITaskPageView.cs" />
+    <Compile Include="Abstractions\Models\MaternityHospital\ITaskView.cs" />
+    <Compile Include="Common\BirhtHistoryPageTypeEnum.cs" />
+    <Compile Include="Common\BithDroppedOutEnum.cs" />
+    <Compile Include="Common\DiagnosisProof.cs" />
+    <Compile Include="Common\DisabilitySheetType.cs" />
+    <Compile Include="Common\DTOFilter.cs" />
+    <Compile Include="Common\EmployeeEnum.cs" />
+    <Compile Include="Common\EmergencyTypesEnum.cs" />
+    <Compile Include="Common\EpidemicModeEnum.cs" />
+    <Compile Include="Common\HistoryCriteriaEnum.cs" />
+    <Compile Include="Common\MeritalStatusMH.cs" />
+    <Compile Include="Common\OutClassServices.cs" />
+    <Compile Include="Common\PretensiaStatusEnum.cs" />
+    <Compile Include="Common\TypeAgreeMarketing.cs" />
+    <Compile Include="Common\TypePayEnum.cs" />
+    <Compile Include="Common\PatientGeneralStateEnum.cs" />
+    <Compile Include="Common\PlaceEmailTypes.cs" />
+    <Compile Include="Common\RhFactorEnum.cs" />
+    <Compile Include="Common\TaskTypes.cs" />
+    <Compile Include="Common\WorkPlaceInfo.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Helpers\ConcreteTypeConverter.cs" />
+    <Compile Include="Helpers\EnumerableExtension.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="Helpers\GenericListDataHelper.cs" />
+    <Compile Include="Helpers\JsonHelper.cs" />
+    <Compile Include="Helpers\ListExtensions.cs" />
+    <Compile Include="Interfaces\Bill\BillInterfaces.cs" />
+    <Compile Include="Interfaces\Bill\IRSMOSUpdate.cs" />
+    <Compile Include="Interfaces\ICOLLABORATORS.cs" />
+    <Compile Include="Interfaces\IDocumentField.cs" />
+    <Compile Include="Interfaces\IDocumentTemplate.cs" />
+    <Compile Include="Interfaces\IEditENTLASSUNG.cs" />
+    <Compile Include="Interfaces\IEmployee.cs" />
+    <Compile Include="Interfaces\IFieldToControl.cs" />
+    <Compile Include="Interfaces\IId.cs" />
+    <Compile Include="Interfaces\IIncident.cs" />
+    <Compile Include="Interfaces\IInvoice.cs" />
+    <Compile Include="Interfaces\IMessage.cs" />
+    <Compile Include="Interfaces\IParentNode.cs" />
+    <Compile Include="Abstractions\Models\iClinic\IEmployeePharmView.cs" />
+    <Compile Include="Abstractions\Models\iClinic\IEmployeeView.cs" />
+    <Compile Include="Abstractions\Models\iClinic\IMkb10.cs" />
+    <Compile Include="Abstractions\Models\iClinic\IPharms.cs" />
+    <Compile Include="Abstractions\Models\iClinic\IPlace.cs" />
+    <Compile Include="Abstractions\Models\iClinic\IProtocol2Map.cs" />
+    <Compile Include="Abstractions\Models\iClinic\IRecommendation.cs" />
+    <Compile Include="Abstractions\Models\iClinic\IService.cs" />
+    <Compile Include="Abstractions\Models\iClinic\IServiceView.cs" />
+    <Compile Include="Abstractions\Models\iClinic\ITaskBase.cs" />
+    <Compile Include="Abstractions\Models\IDiagnosis.cs" />
+    <Compile Include="Abstractions\Models\IEntity.cs" />
+    <Compile Include="Abstractions\Models\IHandBook.cs" />
+    <Compile Include="Abstractions\Models\IPatient.cs" />
+    <Compile Include="Abstractions\Models\IPatientInfo.cs" />
+    <Compile Include="Abstractions\Models\IPeriod.cs" />
+    <Compile Include="Abstractions\Models\IPerson.cs" />
+    <Compile Include="Abstractions\Models\IPersonAddress.cs" />
+    <Compile Include="Abstractions\Models\IPersonInfo.cs" />
+    <Compile Include="Abstractions\Models\IUser.cs" />
+    <Compile Include="BindNameAttribute.cs" />
+    <Compile Include="ColumnMap.cs" />
+    <Compile Include="Common\ActionResult.cs" />
+    <Compile Include="Common\BloodTypeEnum.cs" />
+    <Compile Include="Common\DiagnosisTypes.cs" />
+    <Compile Include="Common\DisabilitySheetStatusEnum.cs" />
+    <Compile Include="Common\EducationEnum.cs" />
+    <Compile Include="Common\EmploymentEnum.cs" />
+    <Compile Include="Common\Enums.cs" />
+    <Compile Include="Common\FamilyRelationshipEnum.cs" />
+    <Compile Include="Common\GenderEnum.cs" />
+    <Compile Include="Common\IPersonHelper.cs" />
+    <Compile Include="Common\MaritalSstatusEnum.cs" />
+    <Compile Include="Common\MedicalDosage.cs" />
+    <Compile Include="Common\PharmBase.cs" />
+    <Compile Include="Common\PolicyTypeEnum.cs" />
+    <Compile Include="Common\RecommendationType.cs" />
+    <Compile Include="Common\ReferalStatus.cs" />
+    <Compile Include="Common\RightEnum.cs" />
+    <Compile Include="Common\RootServiceType.cs" />
+    <Compile Include="Common\RtfBindData.cs" />
+    <Compile Include="Common\RtfBlockType.cs" />
+    <Compile Include="Common\ServiceTypeEnum.cs" />
+    <Compile Include="Common\SignalType.cs" />
+    <Compile Include="Common\TaskStatusEnum.cs" />
+    <Compile Include="Common\TherapyStatus.cs" />
+    <Compile Include="Common\YesNoEnum.cs" />
+    <Compile Include="Handlers\ErrorHandler.cs" />
+    <Compile Include="Handlers\RepositoryActionHandler.cs" />
+    <Compile Include="Handlers\RepositoryErrorHandler.cs" />
+    <Compile Include="Helpers\ReportVisitor.cs" />
+    <Compile Include="Helpers\DateTimeHelpers.cs" />
+    <Compile Include="Helpers\ExceptionHelper.cs" />
+    <Compile Include="Helpers\StringExtension.cs" />
+    <Compile Include="Interfaces\IBindingKeyValue.cs" />
+    <Compile Include="Interfaces\IControlsContainer.cs" />
+    <Compile Include="Interfaces\IControlSpecification.cs" />
+    <Compile Include="Interfaces\IDataContainer.cs" />
+    <Compile Include="Interfaces\IHistory.cs" />
+    <Compile Include="Interfaces\IKeyValue.cs" />
+    <Compile Include="Interfaces\IPremitive.cs" />
+    <Compile Include="Interfaces\IPresenter.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IResult.cs" />
+    <Compile Include="Abstractions\Models\iClinic\IHeader.cs" />
+    <Compile Include="Abstractions\Models\iClinic\IProtocolView.cs" />
+    <Compile Include="Interfaces\IStyleSpecification.cs" />
+    <Compile Include="Interfaces\IULayoutControl.cs" />
+    <Compile Include="Interfaces\IWTPrichina.cs" />
+    <Compile Include="Interfaces\Pretensions\PretensionInterfaces.cs" />
+    <Compile Include="MethodActionAttribute.cs" />
+    <Compile Include="NonBlockingException.cs" />
+    <Compile Include="ReportAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EnvironmentCollector\EnvironmentCollector\EnvironmentCollector.csproj">
+      <Project>{F6C4A6AD-FE4A-4062-A242-A7B5D82A06CE}</Project>
+      <Name>EnvironmentCollector</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

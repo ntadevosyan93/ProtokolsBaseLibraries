@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[CHECKSIT$PHONES] (
+    [id]          INT IDENTITY (1, 1) NOT NULL,
+    [phoneNumber] INT NULL,
+    CONSTRAINT [PK_PHONES] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

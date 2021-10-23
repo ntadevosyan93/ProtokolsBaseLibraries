@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[TT$SPR_PLACES] (
+    [id]   INT          IDENTITY (1, 1) NOT NULL,
+    [text] VARCHAR (50) NULL,
+    CONSTRAINT [PK_TT$SPR_PLACES] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

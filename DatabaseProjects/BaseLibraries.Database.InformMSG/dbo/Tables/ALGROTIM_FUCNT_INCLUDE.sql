@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[ALGROTIM$FUCNT_INCLUDE] (
+    [id]       INT IDENTITY (1, 1) NOT NULL,
+    [idm_main] INT NULL,
+    [idm_alg]  INT NULL,
+    [idm_step] INT NULL,
+    CONSTRAINT [PK_ALGROTIM$FUCNT_INCLUDE] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

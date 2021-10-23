@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[KAD$PSY_TEST_ENTER_HISTORY] (
+    [id]      INT          IDENTITY (1, 1) NOT NULL,
+    [user_in] VARCHAR (50) NULL,
+    [date_in] DATETIME     CONSTRAINT [DF_KAD$PSY_TEST_ENTER_HISTORY_date_in] DEFAULT (getdate()) NULL,
+    [ip_in]   VARCHAR (50) NULL,
+    CONSTRAINT [PK_KAD$PSY_TEST_ENTER_HISTORY] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

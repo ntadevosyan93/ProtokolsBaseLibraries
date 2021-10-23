@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[EVENTS$PLAN_USER] (
+    [id]       INT IDENTITY (1, 1) NOT NULL,
+    [idm_evp]  INT NULL,
+    [idm_user] INT NULL,
+    CONSTRAINT [PK_EVENTS$PLAN_USER] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

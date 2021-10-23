@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[TT$EQUIPMENT] (
+    [id]        INT           IDENTITY (1, 1) NOT NULL,
+    [equipment] VARCHAR (MAX) NULL,
+    CONSTRAINT [PK_TT$USED_EQUIPMENT] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

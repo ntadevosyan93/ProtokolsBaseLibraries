@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[GARAGE$ANDROID_LOG_TELEMAT] (
+    [id]       INT            IDENTITY (1, 1) NOT NULL,
+    [date_in]  DATETIME       CONSTRAINT [DF_GARAGE$ANDROID_LOG_TELEMAT_date_in] DEFAULT (getdate()) NULL,
+    [deviceid] VARCHAR (60)   NULL,
+    [text]     VARCHAR (1050) NULL,
+    [date_gps] DATETIME       NULL,
+    CONSTRAINT [PK_GARAGE$ANDROID_LOG_TELEMAT] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

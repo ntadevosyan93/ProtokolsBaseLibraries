@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[SERVICES_LAST_START] (
+    [AnalisesCheckerCmd] DATETIME CONSTRAINT [DF_SERVICES_LAST_START_AnalisesCheckerCmd] DEFAULT (getdate()) NULL
+);
+

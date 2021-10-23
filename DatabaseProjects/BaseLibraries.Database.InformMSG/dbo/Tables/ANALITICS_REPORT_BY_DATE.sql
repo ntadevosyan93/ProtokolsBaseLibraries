@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[ANALITICS$REPORT_BY_DATE] (
+    [id]       INT            IDENTITY (1, 1) NOT NULL,
+    [text]     VARCHAR (150)  NULL,
+    [sql_text] VARCHAR (1024) NULL,
+    CONSTRAINT [PK_ANALITICS$REPORT_BY_DATE] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

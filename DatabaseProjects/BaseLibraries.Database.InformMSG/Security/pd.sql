@@ -1,0 +1,3 @@
+﻿CREATE USER [pd] FOR LOGIN [pd]
+    WITH DEFAULT_SCHEMA = [pd];
+

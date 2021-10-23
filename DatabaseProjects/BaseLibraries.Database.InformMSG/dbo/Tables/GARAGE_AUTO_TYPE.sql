@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[GARAGE$AUTO_TYPE] (
+    [id]   INT          IDENTITY (1, 1) NOT NULL,
+    [text] VARCHAR (50) NULL,
+    [summ] FLOAT (53)   NULL,
+    CONSTRAINT [PK_GARAGE$AUTO_TYPE] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

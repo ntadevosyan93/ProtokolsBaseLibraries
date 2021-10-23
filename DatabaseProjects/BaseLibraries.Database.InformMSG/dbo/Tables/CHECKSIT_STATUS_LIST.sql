@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[CHECKSIT$STATUS_LIST] (
+    [id]     INT          IDENTITY (1, 1) NOT NULL,
+    [text]   VARCHAR (50) NULL,
+    [status] INT          NULL,
+    CONSTRAINT [PK_CHECKSIT$STATUS_LIST] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
